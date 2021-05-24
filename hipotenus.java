@@ -14,6 +14,8 @@ public class Main {
 
         hipotenüs = Math.sqrt(Math.pow(kenar1,2) + Math.pow(kenar2,2));
         System.out.print("hipotenüs uzunlugu:" + hipotenüs);
+	System.out.println("ücgenin alanı:" + (kenar1*kenar2)/2);
+	
 
 
 
