@@ -3,16 +3,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        double boy,kilo,bedenKitleIndeksi;
+        double height,weight,bodyMassIndex;
 
-        System.out.print("lutfen kilonuzu kg cinsinden girin:");
-        kilo = input.nextDouble();
+        System.out.print("Please enter your weight:");
+        weight = input.nextDouble();
 
-        System.out.print("lutfen boyunuzu metre cinsinden girin:");
-        boy = input.nextDouble();
+        System.out.print("Please enter your height:");
+        height = input.nextDouble();
 
-        bedenKitleIndeksi = kilo / Math.pow(boy,2);
+        bodyMassIndex = weight / Math.pow(height,2);
 
-        System.out.println("beden kitle indeksiniz:" +  bedenKitleIndeksi);
+        System.out.println("Your body mass index is:" +  bodyMassIndex);
     }
 }
