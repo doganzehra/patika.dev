@@ -6,7 +6,7 @@ public class Main {
         System.out.println("Bir Sayı Giriniz :");
         int n = klavye.nextInt();
 
-        for (int i = n; i >= 0 ; i--) {
+        for (int i = n-1; i >= 0 ; i--) {
             for (int j = (n - i); j > 0; j--) {
                 System.out.print(" ");
             }
