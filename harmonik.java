@@ -1,12 +1,15 @@
+import java.util.Scanner;
+
 public class Main {
-    public static void main(String[] args) {
-        double[] array = { 1, 2, 3, 4, 5 };
-        double seri = 0;
-        for (int i = 0; i < array.length; i++) {
-            seri = seri+ (1 / array[i]);
-        }
-        System.out.println(seri);
-        double average = (array.length) / (seri);
-        System.out.println(average);
-    }
-} 
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		double result = 0;
+		System.out.print("Enter a number please: ");
+		int number = input.nextInt();
+
+		for (int i = 1; i <= number; i++) {
+			result += (1/i);
+		}
+		System.out.println("Result : "+result);
+	}
+}
